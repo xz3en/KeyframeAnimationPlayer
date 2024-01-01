@@ -34,7 +34,7 @@ function Player:LoadAnimation(KeyframeSequence : KeyframeSequence)
 	return NewTrack
 end
 
-game:GetService("RunService").RenderStepped:Connect(function(DeltaTime : number)
+game:GetService("RunService").Stepped:Connect(function(DeltaTime : number)
 	local Camera = workspace.CurrentCamera
 	for _, Track in Render do 
 		Track:_update(DeltaTime)
