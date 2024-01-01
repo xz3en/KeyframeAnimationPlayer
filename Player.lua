@@ -1,7 +1,7 @@
 local Player = {}
 Player.__index = Player
 
-local Track = require(script.Track)
+local Track = loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/xz3en/KeyframeAnimationPlayer/main/Track.lua"))()
 
 local Render = {}
 
